@@ -5,10 +5,19 @@ import yaml
 import re
 from sklearn.model_selection import train_test_split
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt_tab')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import LabelEncoder
+
+# Download NLTK data
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 
 #logging configuration for data preprocessing category
@@ -131,7 +140,7 @@ def split_data(data:pd.DataFrame, test_size:float, random_state:int)-> pd.DataFr
     
 def preprocessing_stage():
     try:
-        config_path = r'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\config.yaml'
+        config_path = 'config.yaml'
 
         with open(config_path,'r') as f:
             config = yaml.safe_load(f)

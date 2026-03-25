@@ -8,3 +8,7 @@ scikit-learn==1.8.0
 scipy==1.17.0
 pytest==7.3.1
 pytest-cov==4.0.0
+dvc
+PyYAML
+joblib
+nltk

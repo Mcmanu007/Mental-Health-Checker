@@ -110,11 +110,14 @@ def saving_model_info(model_path:str,run_id:str,file_path:str):
         logger.error('Failed to save the model')
 
 def main():
-    mlflow.set_tracking_uri('http://127.0.0.1:5000')
+    # In CI environment, tracking URI might be different or local
+    if not os.environ.get('GITHUB_ACTIONS'):
+        mlflow.set_tracking_uri('http://127.0.0.1:5000')
+    
     mlflow.set_experiment('PIPELINES For MENTAL HEALTH CHECK')
     with mlflow.start_run() as run:
         try:
-            config_path = r'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\config.yaml'
+            config_path = 'config.yaml'
 
             with open(config_path,'r') as file:
                 config = yaml.safe_load(file)

@@ -30,7 +30,12 @@ jobs:
       run: |
         python -m pytest
 
-    - name: Run Data Ingestion
+    - name: Setup DVC
+      env:
+        GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
       run: |
-        cd src/data_modelling/data_ingestion
-        python src/data_modelling/data_ingestion.py 
+        # If you have a remote configured, uncomment the following line
+        # dvc pull
+        
+        # If DVC is used for pipeline management:
+        dvc repro

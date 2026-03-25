@@ -122,7 +122,7 @@ def save_model(model):
 
 def model_building():
     try:
-        config_path = r'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\config.yaml'
+        config_path = 'config.yaml'
 
         with open(config_path,'r') as file:
             config = yaml.safe_load(file)
