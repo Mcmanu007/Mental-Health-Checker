@@ -1,0 +1,46 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data_modelling/data_ingestion.py
+    deps:
+    - path: config.yaml
+      hash: md5
+      md5: 8a2aef3291db9cee2192d2412c88d366
+      size: 1151
+    - path: src/data_modelling/data_ingestion.py
+      hash: md5
+      md5: 4552d15f4d0c454aaa987218d8e96590
+      size: 3548
+  data_preprocessing:
+    cmd: python src/data_modelling/data_preprocess.py
+    deps:
+    - path: config.yaml
+      hash: md5
+      md5: 8a2aef3291db9cee2192d2412c88d366
+      size: 1151
+    - path: src/data_modelling/data_preprocess.py
+      hash: md5
+      md5: 3ae8679a0dd516e1712235df85a42bfc
+      size: 4967
+  model_building:
+    cmd: python src/mod/model_building.py
+    deps:
+    - path: config.yaml
+      hash: md5
+      md5: 8a2aef3291db9cee2192d2412c88d366
+      size: 1151
+    - path: src/mod/model_building.py
+      hash: md5
+      md5: b65eb9691a112f2c2a3131b7b5dedf34
+      size: 4931
+  evaluation:
+    cmd: python src/mod/model_evaluation.py
+    deps:
+    - path: config.yaml
+      hash: md5
+      md5: 8a2aef3291db9cee2192d2412c88d366
+      size: 1151
+    - path: src/mod/model_evaluation.py
+      hash: md5
+      md5: 7dd10baa945477a0c157be3aec956ca5
+      size: 6683

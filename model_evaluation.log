@@ -1,0 +1,10 @@
+2026-03-22 13:14:24,686 - model_evaluation.log -DEBUG -Testing data loaded succesfully
+2026-03-22 13:14:24,705 - model_evaluation.log -DEBUG -Validation  data loaded succesfully
+2026-03-22 13:14:24,738 - model_evaluation.log -DEBUG -Vectorizer loaded from 
+2026-03-22 13:14:28,880 - model_evaluation.log -ERROR -Failed to save the model
+2026-03-22 13:14:28,900 - model_evaluation.log -DEBUG -Evaluating the testing data
+2026-03-22 13:17:51,614 - model_evaluation.log -DEBUG -Testing data loaded succesfully
+2026-03-22 13:17:51,636 - model_evaluation.log -DEBUG -Validation  data loaded succesfully
+2026-03-22 13:17:51,670 - model_evaluation.log -DEBUG -Vectorizer loaded from 
+2026-03-22 13:17:55,772 - model_evaluation.log -DEBUG -Model info saved successfully
+2026-03-22 13:17:55,796 - model_evaluation.log -DEBUG -Evaluating the testing data

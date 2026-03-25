@@ -1,0 +1,39 @@
+data:
+  data_path: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\eda& preprocessing\health_folder\mental_heath_unbanlanced.csv'
+  test_size: 0.4
+  random_state: 42
+  test_evaluation_size: 0.2
+
+preprocessing_data:
+  train_path: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\.data\raw\train.csv'
+  test_path: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\.data\raw\test.csv'
+
+training_data:
+  train_data: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\.data\preprocessed data\train_prepocessed.csv'
+
+testing_data: 
+  test_data: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\.data\preprocessed data\test_preprocessed.csv'
+
+validation_data:
+  eval_data: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\.data\preprocessed data\eval_preprocessed.csv'
+
+vectorizer:
+  max_features: 500
+  ngram_range: [1,2]
+  max_df: 0.7
+
+logistic:
+  solver: 'lbfgs'
+  max_iter: 500
+  C: 1
+ 
+saved_model:
+  model: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\pickle\log_model.pkl'
+
+vectorizer_model:
+  vec: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\pickle\vectorizer.pkl'
+  
+
+
+
+  

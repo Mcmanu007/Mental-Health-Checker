@@ -1,0 +1,21 @@
+2026-03-19 13:11:48,914 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:11:48,990 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:12:00,469 - data_preprocessing - ERROR - Failed to normalize the tweets
+2026-03-19 13:12:06,499 - data_preprocessing - ERROR - Failed to normalize the tweets
+2026-03-19 13:12:06,500 - data_preprocessing - ERROR - An error occured in saving the data
+2026-03-19 13:12:06,500 - data_preprocessing - ERROR - An error occured in the preprocessing stage
+2026-03-19 13:14:46,275 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:14:46,276 - data_preprocessing - ERROR - Error in loading the data
+2026-03-19 13:14:46,276 - data_preprocessing - ERROR - An error occured in the preprocessing stage
+2026-03-19 13:15:30,118 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:15:30,193 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:15:41,027 - data_preprocessing - DEBUG - Tweets normalized successfully
+2026-03-19 13:15:47,303 - data_preprocessing - DEBUG - Tweets normalized successfully
+2026-03-19 13:21:40,601 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:21:40,690 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-19 13:21:51,797 - data_preprocessing - DEBUG - Tweets normalized successfully
+2026-03-19 13:21:58,526 - data_preprocessing - DEBUG - Tweets normalized successfully
+2026-03-22 13:00:58,236 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-22 13:00:58,310 - data_preprocessing - DEBUG - Data loaded succesfully
+2026-03-22 13:01:21,189 - data_preprocessing - DEBUG - Tweets normalized successfully
+2026-03-22 13:01:33,312 - data_preprocessing - DEBUG - Tweets normalized successfully

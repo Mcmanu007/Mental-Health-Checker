@@ -1,0 +1,31 @@
+2026-03-17 23:02:09,040 - model_building - DEBUG - Training data loaded successfully
+2026-03-17 23:02:09,044 - model_building - ERROR - Error converting the thef word to vec
+2026-03-17 23:02:09,044 - model_building - ERROR - Error in training the model
+2026-03-19 13:15:49,594 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:15:49,599 - model_building - ERROR - Error converting the the word to vec
+2026-03-19 13:15:49,600 - model_building - ERROR - Error in training the model
+2026-03-19 13:18:33,043 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:18:33,045 - model_building - ERROR - Error converting the the word to vec
+2026-03-19 13:18:33,045 - model_building - ERROR - Error in training the model
+2026-03-19 13:19:48,903 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:19:48,904 - model_building - ERROR - Error converting the the word to vec
+2026-03-19 13:19:48,904 - model_building - ERROR - Error in training the model
+2026-03-19 13:22:00,653 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:22:00,654 - model_building - ERROR - Error converting the the word to vec
+2026-03-19 13:22:00,655 - model_building - ERROR - Error in training the model
+2026-03-19 13:24:09,751 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:24:09,754 - model_building - ERROR - Error converting the the word to vec {e}
+2026-03-19 13:24:09,754 - model_building - ERROR - Error in training the model
+2026-03-19 13:26:32,496 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:26:32,498 - model_building - ERROR - Error converting the the word to vec np.nan is an invalid document, expected byte or unicode string.
+2026-03-19 13:26:32,499 - model_building - ERROR - Error in training the model
+2026-03-19 13:28:50,798 - model_building - DEBUG - Training data loaded successfully
+2026-03-19 13:28:52,676 - model_building - DEBUG - Vecotorization performed successfully
+2026-03-19 13:28:53,068 - model_building - DEBUG - Model trained successfully
+2026-03-19 13:28:53,070 - model_building - DEBUG - Saved the trained model
+2026-03-19 13:28:53,070 - model_building - DEBUG - Model building was successful
+2026-03-22 13:01:35,281 - model_building - DEBUG - Training data loaded successfully
+2026-03-22 13:01:36,830 - model_building - DEBUG - Vecotorization performed successfully
+2026-03-22 13:01:37,163 - model_building - DEBUG - Model trained successfully
+2026-03-22 13:01:37,164 - model_building - DEBUG - Saved the trained model
+2026-03-22 13:01:37,164 - model_building - DEBUG - Model building was successful
