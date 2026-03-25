@@ -9,13 +9,13 @@ preprocessing_data:
   test_path: '.data/raw/test.csv'
 
 training_data:
-  train_data: '.data/preprocessed/train_preprocessed.csv'
+  train_data: '.data/preprocessed data/train_preprocessed.csv'
 
 testing_data:
-  test_data: '.data/preprocessed/test_preprocessed.csv'
+  test_data: '.data/preprocessed data/test_preprocessed.csv'
 
 validation_data:
-  eval_data: '.data/preprocessed/eval_preprocessed.csv'
+  eval_data: '.data/preprocessed data/eval_preprocessed.csv'
 
 vectorizer:
   max_features: 500
@@ -28,7 +28,7 @@ logistic:
   C: 1
 
 saved_model:
-  model: 'models/log_model.pkl'
+  model: 'pickle/log_model.pkl'
 
 vectorizer_model:
-  vec: 'models/vectorizer.pkl'
+  vec: 'pickle/vectorizer.pkl'
