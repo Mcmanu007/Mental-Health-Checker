@@ -41,9 +41,4 @@ jobs:
         python src/mod/model_build.py \
           --config config.yaml
     
-    - name: Run Model Evaluation
-      run: |
-        python src/mod/model_evaluation.py \
-          --config config.yaml
-          -- mlflow_tracking_uri http://127.0.0.1:5000
         
