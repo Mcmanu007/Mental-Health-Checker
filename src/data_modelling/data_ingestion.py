@@ -4,6 +4,7 @@ import numpy as np
 import os
 from sklearn.model_selection import train_test_split
 import yaml
+from pathlib import Path
 
 # logging configuration
 logger = logging.getLogger(name='data_ingestion')
@@ -47,7 +48,11 @@ def load_data(data:str):
     except Exception as e:
         logger.error('An error occured in loading the data')
         raise e
-
+    
+# resolving the path issues  
+def resolve_path(relative_path: str) -> Path:
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    return BASE_DIR / relative_path
 
 # splitting the data
 def split_data(data:pd.DataFrame,test_size: int,random_state:int):
@@ -99,7 +104,7 @@ def ingest_data_stage():
         with open(config_path,'r') as file:
             config = yaml.safe_load(file)
 
-        data_path = config['data']['data_path']
+        data_path = resolve_path(config['data']['data_path'])
         test_size = config['data']['test_size']
         random_state = config['data']['random_state']
         

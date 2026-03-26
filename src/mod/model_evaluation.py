@@ -9,6 +9,7 @@ import yaml
 from sklearn.metrics import accuracy_score,classification_report
 from mlflow.models.signature import infer_signature
 from sklearn.feature_extraction.text import TfidfVectorizer
+from pathlib import Path
 
 # logging configuration
 logger = logging.getLogger(name='model_evaluation.log')
@@ -63,7 +64,11 @@ def load_saved_model(log_model:str):
     except Exception as e:
         logger.error('An error occured in loading the saved model')
 
-
+# resolving the path issues  
+def resolve_path(relative_path: str) -> Path:
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    return BASE_DIR / relative_path
+    
 def load_vectorizer_model(vec_path:str):
     try:
         with open(vec_path,'rb') as f:
@@ -122,8 +127,8 @@ def main():
             with open(config_path,'r') as file:
                 config = yaml.safe_load(file)
 
-            test_path = config['testing_data']['test_data']
-            val_path = config['validation_data']['eval_data']
+            test_path = resolve_path(config['testing_data']['test_data'])
+            val_path = resolve_path(config['validation_data']['eval_data'])
             model_path = config['saved_model']['model']
             vec_path = config['vectorizer_model']['vec']
 

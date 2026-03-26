@@ -7,6 +7,7 @@ import joblib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 from sklearn.linear_model import LogisticRegression
+from pathlib import Path
 
 logger = logging.getLogger('model_building')
 logger.setLevel(logging.DEBUG)
@@ -75,7 +76,11 @@ def convert_word_to_vec(train_data:pd.DataFrame,max_features,ngram_range,max_df)
         logger.error(f"Error converting the the word to vec {e}")
         raise e
 
-
+# resolving the path issues  
+def resolve_path(relative_path: str) -> Path:
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    return BASE_DIR / relative_path
+    
 def building_the_model(X_train:np.ndarray,y_train:np.ndarray,max_iter,C,solver):
     '''
     Args:
@@ -127,7 +132,7 @@ def model_building():
         with open(config_path,'r') as file:
             config = yaml.safe_load(file)
 
-        train_path = config['training_data']['train_data']
+        train_path = resolve_path(config['training_data']['train_data'])
         
         #vectorizer parameters
         max_features = config['vectorizer']['max_features']

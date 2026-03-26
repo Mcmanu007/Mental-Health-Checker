@@ -13,6 +13,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import LabelEncoder
+from pathlib import Path
 
 # Download NLTK data
 nltk.download('punkt')
@@ -136,7 +137,11 @@ def split_data(data:pd.DataFrame, test_size:float, random_state:int)-> pd.DataFr
     except Exception as e:
         logger.error(f"Error splitting data: {e}")
         raise e
-    
+
+# resolving the path issues  
+def resolve_path(relative_path: str) -> Path:
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    return BASE_DIR / relative_path
     
 def preprocessing_stage():
     try:
@@ -145,8 +150,8 @@ def preprocessing_stage():
         with open(config_path,'r') as f:
             config = yaml.safe_load(f)
 
-        train_data_path = config['preprocessing_data']['train_path']
-        test_data_path =  config['preprocessing_data']['test_path']
+        train_data_path = resolve_path(config['preprocessing_data']['train_path'])
+        test_data_path =  resolve_path(config['preprocessing_data']['test_path'])
 
         train_data = load_data(train_data_path)
         test_data = load_data(test_data_path)

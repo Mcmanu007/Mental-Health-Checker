@@ -26,16 +26,24 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run tests
+    - name: Run Data Ingestion
       run: |
-        python -m pytest
+        python src/data_modelling/data_preprocess.py \
+          --config config.yaml
+    
+    - name: Run Data Preprocessing
+      run: |
+        python src/data_modelling/data_preprocess.py \
+          --config config.yaml
 
-    - name: Setup DVC
-      env:
-        GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+    - name: Run Model Building
       run: |
-        # If you have a remote configured, uncomment the following line
-        # dvc pull
+        python src/mod/model_building.py \
+          --config config.yaml
+    
+    - name: Run Model Evaluation
+      run: |
+        python src/mod/model_evaluation.py \
+          --config config.yaml
+          -- mlflow_tracking_uri http://127.0.0.1:5000
         
-        # If DVC is used for pipeline management:
-        dvc repro
