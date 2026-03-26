@@ -28,7 +28,7 @@ jobs:
 
     - name: Run Data Ingestion
       run: |
-        python src/data_modelling/data_preprocess.py \
+        python src/data_modelling/data_ingestion.py \
           --config config.yaml
     
     - name: Run Data Preprocessing

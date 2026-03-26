@@ -9,10 +9,10 @@ preprocessing_data:
   test_path: 'data/raw/test.csv'
 
 training_data:
-  train_data: 'data\preprocessed_data\train_prepocessed.csv'
+  train_data: 'data/preprocessed_data/train_preprocessed.csv'
 
 testing_data:
-  test_data: 'data\preprocessed_data\test_preprocessed.csv'
+  test_data: 'data/preprocessed_data/test_preprocessed.csv'
 
 validation_data:
   eval_data: 'data/preprocessed_data/eval_preprocessed.csv'
