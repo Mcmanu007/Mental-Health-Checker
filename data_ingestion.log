@@ -18,3 +18,23 @@
 2026-03-22 13:00:52,972 - data_ingestion-DEBUG-Data loaded successfully
 2026-03-22 13:00:52,985 - data_ingestion-INFO-Splitting the data was succesful
 2026-03-22 13:00:53,270 - data_ingestion-DEBUG-Saving the data was successful
+2026-03-26 19:01:06,143 - data_ingestion-INFO-Loading the csv file
+2026-03-26 19:01:06,542 - data_ingestion-DEBUG-Data loaded successfully
+2026-03-26 19:01:06,566 - data_ingestion-INFO-Splitting the data was succesful
+2026-03-26 19:01:07,502 - data_ingestion-DEBUG-Saving the data was successful
+2026-03-26 19:07:12,003 - data_ingestion-INFO-Loading the csv file
+2026-03-26 19:07:12,150 - data_ingestion-DEBUG-Data loaded successfully
+2026-03-26 19:07:12,156 - data_ingestion-INFO-Splitting the data was succesful
+2026-03-26 19:07:12,425 - data_ingestion-DEBUG-Saving the data was successful
+2026-03-26 19:08:32,546 - data_ingestion-INFO-Loading the csv file
+2026-03-26 19:08:32,705 - data_ingestion-DEBUG-Data loaded successfully
+2026-03-26 19:08:32,709 - data_ingestion-INFO-Splitting the data was succesful
+2026-03-26 19:08:32,983 - data_ingestion-DEBUG-Saving the data was successful
+2026-03-26 19:31:39,185 - data_ingestion-INFO-Loading the csv file
+2026-03-26 19:31:39,378 - data_ingestion-DEBUG-Data loaded successfully
+2026-03-26 19:31:39,383 - data_ingestion-INFO-Splitting the data was succesful
+2026-03-26 19:31:39,660 - data_ingestion-DEBUG-Saving the data was successful
+2026-03-26 19:34:24,417 - data_ingestion-INFO-Loading the csv file
+2026-03-26 19:34:24,569 - data_ingestion-DEBUG-Data loaded successfully
+2026-03-26 19:34:24,573 - data_ingestion-INFO-Splitting the data was succesful
+2026-03-26 19:34:24,844 - data_ingestion-DEBUG-Saving the data was successful

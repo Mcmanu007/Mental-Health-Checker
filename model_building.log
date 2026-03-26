@@ -29,3 +29,17 @@
 2026-03-22 13:01:37,163 - model_building - DEBUG - Model trained successfully
 2026-03-22 13:01:37,164 - model_building - DEBUG - Saved the trained model
 2026-03-22 13:01:37,164 - model_building - DEBUG - Model building was successful
+2026-03-26 19:01:58,005 - model_building - ERROR - Error in locating the file C:\Users\siawc\OneDrive\Desktop\Felix\mental health\.data\preprocessed data\train_preprocessed.csv
+2026-03-26 19:01:58,006 - model_building - ERROR - Error converting the the word to vec 'NoneType' object is not subscriptable
+2026-03-26 19:01:58,007 - model_building - ERROR - Error in training the model
+2026-03-26 19:08:55,121 - model_building - ERROR - Error in locating the file C:\Users\siawc\OneDrive\Desktop\Felix\mental health\data\preprocessed_data\train_preprocessed.csv
+2026-03-26 19:08:55,122 - model_building - ERROR - Error converting the the word to vec 'NoneType' object is not subscriptable
+2026-03-26 19:08:55,122 - model_building - ERROR - Error in training the model
+2026-03-26 19:32:13,659 - model_building - ERROR - Error in locating the file C:\Users\siawc\OneDrive\Desktop\Felix\mental health\data\preprocessed_data\train_preprocessed.csv
+2026-03-26 19:32:13,660 - model_building - ERROR - Error converting the the word to vec 'NoneType' object is not subscriptable
+2026-03-26 19:32:13,660 - model_building - ERROR - Error in training the model
+2026-03-26 19:34:44,151 - model_building - DEBUG - Training data loaded successfully
+2026-03-26 19:34:45,724 - model_building - DEBUG - Vecotorization performed successfully
+2026-03-26 19:34:46,049 - model_building - DEBUG - Model trained successfully
+2026-03-26 19:34:46,050 - model_building - DEBUG - Saved the trained model
+2026-03-26 19:34:46,051 - model_building - DEBUG - Model building was successful

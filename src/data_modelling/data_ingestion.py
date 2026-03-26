@@ -74,7 +74,7 @@ def split_data(data:pd.DataFrame,test_size: int,random_state:int):
         raise e
     
 
-def saving_data(train:pd.DataFrame,test:pd.DataFrame,path:str='.data/raw'):
+def saving_data(train:pd.DataFrame,test:pd.DataFrame,path:str='data/raw'):
     """
     Args:
        train: Takes in the train data as a pandas Dataframe

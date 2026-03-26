@@ -104,7 +104,7 @@ def normalize_text(data:pd.DataFrame):
         logger.error('Failed to normalize the tweets')
 
 
-def save_preprocess_data(train:pd.DataFrame,test:pd.DataFrame,path:str='.data/preprocessed data'):
+def save_preprocess_data(train:pd.DataFrame,test:pd.DataFrame,path:str='data/preprocessed_data'):
     """
      Args:
        train: Takes in the train data as a pandas Dataframe

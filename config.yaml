@@ -5,22 +5,22 @@ data:
   test_evaluation_size: 0.2
 
 preprocessing_data:
-  train_path: '.data/raw/train.csv'
-  test_path: '.data/raw/test.csv'
+  train_path: 'data/raw/train.csv'
+  test_path: 'data/raw/test.csv'
 
 training_data:
-  train_data: '.data/preprocessed data/train_preprocessed.csv'
+  train_data: 'data\preprocessed_data\train_prepocessed.csv'
 
 testing_data:
-  test_data: '.data/preprocessed data/test_preprocessed.csv'
+  test_data: 'data\preprocessed_data\test_preprocessed.csv'
 
 validation_data:
-  eval_data: '.data/preprocessed data/eval_preprocessed.csv'
+  eval_data: 'data/preprocessed_data/eval_preprocessed.csv'
 
 vectorizer:
   max_features: 500
   ngram_range: [1, 2]
-  max_df: 0.7
+  max_df: 0.7 
 
 logistic:
   solver: 'lbfgs'
