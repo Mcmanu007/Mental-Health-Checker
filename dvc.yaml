@@ -11,9 +11,9 @@ stages:
      - src/data_modelling/data_preprocess.py
      - config.yaml
   model_building:
-   cmd: python src/mod/model_building.py
+   cmd: python src/mod/model_build.py
    deps:
-    - src/mod/model_building.py
+    - src/mod/model_build.py
     - config.yaml
 
   evaluation:

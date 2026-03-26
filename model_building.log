@@ -43,3 +43,8 @@
 2026-03-26 19:34:46,049 - model_building - DEBUG - Model trained successfully
 2026-03-26 19:34:46,050 - model_building - DEBUG - Saved the trained model
 2026-03-26 19:34:46,051 - model_building - DEBUG - Model building was successful
+2026-03-26 19:51:19,336 - model_building - DEBUG - Training data loaded successfully
+2026-03-26 19:51:20,993 - model_building - DEBUG - Vecotorization performed successfully
+2026-03-26 19:51:21,286 - model_building - DEBUG - Model trained successfully
+2026-03-26 19:51:21,289 - model_building - DEBUG - Saved the trained model
+2026-03-26 19:51:21,289 - model_building - DEBUG - Model building was successful

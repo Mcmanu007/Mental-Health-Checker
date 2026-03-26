@@ -23,13 +23,13 @@ stages:
       md5: 7f50b8e4181aa456d48c221879b25462
       size: 5020
   model_building:
-    cmd: python src/mod/model_building.py
+    cmd: python src/mod/model_build.py
     deps:
     - path: config.yaml
       hash: md5
       md5: 2be82a50404634717a66b7c504b5ee9d
       size: 697
-    - path: src/mod/model_building.py
+    - path: src/mod/model_build.py
       hash: md5
       md5: 22435e1dab35877d19cd1fd6499fdd0a
       size: 4920
