@@ -38,7 +38,7 @@ jobs:
 
     - name: Run Model Building
       run: |
-        python src/mod/model_building.py \
+        python src/mod/model_build.py \
           --config config.yaml
     
     - name: Run Model Evaluation
