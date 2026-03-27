@@ -116,8 +116,7 @@ def saving_model_info(model_path:str,run_id:str,file_path:str):
 
 def main():
     # In CI environment, tracking URI might be different or local
-    if not os.environ.get('GITHUB_ACTIONS'):
-        mlflow.set_tracking_uri('http://127.0.0.1:5000')
+    mlflow.set_tracking_uri('http://127.0.0.1:5000')
     
     mlflow.set_experiment('PIPELINES For MENTAL HEALTH CHECK')
     with mlflow.start_run() as run:
