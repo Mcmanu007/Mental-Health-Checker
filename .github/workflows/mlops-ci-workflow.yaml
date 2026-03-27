@@ -44,7 +44,7 @@ jobs:
     - name: Set up MLflow Tracking Server
       run: |
         docker pull ghcr.io/mlflow/mlflow:latest
-        docker run -d -p 5555:5000 --name mlflow-server ghcr.io/mlflow/mlflow:latest \
+        docker run -d -p 5000:5000 --name mlflow-server ghcr.io/mlflow/mlflow:latest \
           mlflow server --host 0.0.0.0 \
           --backend-store-uri sqlite:///mlflow.db \
           --default-artifact-root /tmp/mlruns
@@ -53,7 +53,7 @@ jobs:
       run: |
         python src/mod/model_evaluation.py \
           --config config.yaml
-          --mlflow-tracking-uri http://localhost:5555
+          --mlflow-tracking-uri http://localhost:5000
     
     - name: Cleanup MLflow Tracking Server 
       run: |
