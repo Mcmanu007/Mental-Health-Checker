@@ -53,7 +53,7 @@ jobs:
       run: |
         python src/mod/model_evaluation.py \
           --config config.yaml
-          -- mlflow-tracking-uri http://localhost:5555
+          --mlflow-tracking-uri http://localhost:5555
     
     - name: Cleanup MLflow Tracking Server 
       run: |
