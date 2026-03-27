@@ -52,7 +52,7 @@ jobs:
     - name: Run Model Evaluation
       run: |
         python src/mod/model_evaluation.py \
-          --config config.yaml
+          --config config.yaml \
           --mlflow-tracking-uri http://localhost:5000
     
     - name: Cleanup MLflow Tracking Server 
