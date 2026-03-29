@@ -3,15 +3,20 @@ from base import Model
 import joblib
 import yaml
 import uvicorn
+from pathlib import Path
 
+def resolve_path(relative_path: str) -> Path:
+    BASE_DIR = Path(__file__).resolve().parents[2]
+    return BASE_DIR / relative_path
 # 1. Load configuration
-config_path = r'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\config.yaml'
+BASE_DIR = Path(__file__).parent.resolve()
+config_path = BASE_DIR / "config.yaml"
 
 with open(config_path, 'r') as file:
     config = yaml.safe_load(file)
 
-log_path = config['saved_model']['model']
-vectorizer_path = config['vectorizer_model']['vec']
+log_path = resolve_path(config['saved_model']['model'])
+vectorizer_path = resolve_path(config['vectorizer_model']['vec'])
 
 
 log_model = joblib.load(log_path)

@@ -28,7 +28,8 @@ logistic:
   C: 1
 
 saved_model:
-  model: 'pickle/log_model.pkl'
+  model: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\pickle\log_model.pkl'
 
 vectorizer_model:
-  vec: 'pickle/vectorizer.pkl'
+  vec: 'C:\Users\siawc\OneDrive\Desktop\Felix\mental health\pickle\vectorizer.pkl'
+  
