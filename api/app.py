@@ -6,11 +6,23 @@ import uvicorn
 from pathlib import Path
 
 def resolve_path(relative_path: str) -> Path:
-    BASE_DIR = Path(__file__).resolve().parents[2]
-    return BASE_DIR / relative_path
+    current_dir = Path(__file__).resolve().parent
+    candidates = [current_dir / relative_path, Path.cwd() / relative_path]
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    for parent in current_dir.parents:
+        candidate = parent / relative_path
+        if candidate.exists():
+            return candidate
+
+    raise FileNotFoundError(
+        f"Could not resolve path '{relative_path}'. Searched from {current_dir} and cwd {Path.cwd()}"
+    )
+
 # 1. Load configuration
-BASE_DIR = Path(__file__).parent.resolve()
-config_path = BASE_DIR / "config.yaml"
+config_path = resolve_path('config.yaml')
 
 with open(config_path, 'r') as file:
     config = yaml.safe_load(file)
