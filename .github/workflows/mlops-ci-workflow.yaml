@@ -55,7 +55,7 @@ jobs:
           --config config.yaml \
           --mlflow-tracking-uri http://localhost:5000
     
-    - name: Cleanup MLflow Tracking Server 
+    - name: Cleanup MLflow Tracking Server
       run: |
         docker stop mlflow-server
         docker rm mlflow-server
